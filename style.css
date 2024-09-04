@@ -1,0 +1,424 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.9rem;
+    
+}
+img:hover{
+    opacity: 0.8;
+}
+
+header{
+    height: 100vh;
+    background: url(./images/home/showcase.jpg) no-repeat center center/cover;
+    position: relative;
+
+}
+header::before{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%;
+}
+h1{
+    font-size: 2rem;
+    font-weight: 300;
+}
+.fa-book-open-reader{
+   padding-right: 0.5rem;
+   font-size: 2.5rem;
+}
+h1 span{
+    color: rgb(40, 167, 69);
+}
+.nav-menu{
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4.5rem;
+    padding: 0 2.5rem;
+    opacity: 0.9;
+    position: fixed;
+    right: 0;
+    left: 0;  
+
+}
+.navbar.top{
+    background: transparent;
+}
+
+.nav-links{
+    display: flex;
+}
+a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+  
+}
+.nav-links a li{
+    padding: 0.5rem 2rem;
+    font-size: 1.2rem;
+
+}
+.nav-links a li:hover{
+    border-bottom: 2px solid rgb(40, 167, 69);
+}
+header .hero-content{
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+header *{
+    z-index: 10;
+}
+ h2{
+    font-size: 4rem;
+    font-weight: 300;
+}
+.hero-content p{
+    padding: 1.5rem;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+ .btn{
+    color: white;
+    background-color:rgb(40, 167, 69) ;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    position: relative;
+}
+.btn-img{
+    position: absolute;
+    width: 20px;
+    top: 33%;
+    left: 10%;
+    
+}
+.hero-content button:hover{
+    opacity: 0.8;
+}
+
+.section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    column-gap: 6rem;
+    padding: 4rem 0;
+    
+
+    
+}
+.section i{
+    color: white;
+    text-align: center;
+    background-color:  rgb(40, 167, 69) ;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-top: 3rem;
+}
+.section h3{
+    color:#333;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0;
+}
+.section p{
+    font-size: 1.3rem;
+}
+
+.services{
+    display: flex;
+    width: 100%;
+    padding: 5rem 0;
+}
+.services-img-section{
+    width: 50%;
+    object-fit: cover;
+}
+.services-img{
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+}
+.services-content{
+    width: 50%;
+    background-color: rgb(40, 167, 69);
+    color: white;
+}
+
+.services-text span{
+    font-weight: bold;
+
+}
+.services-text{
+    padding: 0 4rem;
+    padding-top: 10rem;
+}
+.services-text h2{
+    padding: 2rem 0;
+    font-weight: 300;
+    font-size: 3rem;
+}
+.services-text p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    
+}
+.services-text button{
+    border: 2px solid white;
+    margin-top: 2rem;
+}
+.services-text-2{
+    text-align: center;
+    padding: 0;
+    padding-bottom: 2rem;
+}
+.cases{
+    display: flex;
+    padding: 0 1rem;
+}
+.column{
+    max-width: 25%;
+    padding: 0 4px;
+}
+.column img{
+    width: 100%;
+    max-width: 100%;  
+
+
+}
+
+.services-2{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 2rem 0;
+}
+.services-2 .services-content{
+    background-color: #0284d0;
+}
+.services-button{
+    background-color: #0284d0;
+}
+
+.team{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 0;
+}
+.people{
+    width: 33%;
+}
+.people img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.people .name{
+    font-weight: bold;
+}
+
+.call{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+
+}
+.call-img{
+    width: 50%;
+}
+.call-img img{
+    width: 100%;
+}
+.call-form{
+    width: 50%;
+    text-align: center;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem 3rem;
+    
+}
+input,button{
+   padding: 0.6rem;
+   border: none;
+}
+input{
+    outline-color: rgb(40, 167, 69);
+    font-size: 1.3rem;
+}
+.call-button{
+    background-color:  rgb(40, 167, 69 );
+    color: white;
+    font-size: 1.3rem;
+
+}
+input::placeholder{
+    font-size: 1.3rem;
+}
+.footer{
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem;
+}
+.socials a{
+    margin: 0 1rem;
+    
+}
+.footer p{
+    color: white;
+    font-size: 1.2rem;
+    padding-top: 0.5rem;
+}
+
+@media(max-width: 768px){
+    header{
+        height: 90vh;
+        position: relative;
+    }
+    .nav-menu{
+        flex-direction: column;
+        padding-bottom: 100px;
+    }
+    .logo{
+        padding-bottom: 10px;
+    }
+    .nav-links a li{
+        padding: 0 0.5rem;
+    }
+    .hero-content{
+        text-align: center;
+        position: absolute;
+        top: 10%;
+        left: 10%;
+        right: 10%;
+       
+    }
+    .hero-content h2{
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 500;
+        display: flex;
+    }
+    .hero-content p{
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+    .section{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0;
+    padding-bottom: 2rem;
+    }
+    .services{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+    }
+    .services-img-section{
+        width: 100%;
+        height: 40vh;
+
+    }
+    .services-content{
+        width: 100%;
+        text-align: center;
+    }
+    .services-text span{
+        font-weight: bold;
+    }
+    .services-text{
+        padding: 0 1rem;
+        padding-top: 2rem;
+    }
+    .services-text h2{
+        padding: 1rem 0;
+        font-weight: 300;
+        font-size: 2rem;
+    }
+    .services-text p{
+        font-size: 1rem;
+        font-weight: 300;
+        
+    }
+    .services-text button{
+        border: 2px solid white;
+        margin-top: 1rem;
+        margin: 1rem;
+    }
+    .services-text-2{
+        text-align: center;
+        padding: 0;
+        padding-bottom: 2rem;
+    }
+    .services-2{
+        display: flex;
+        flex-direction: column;
+    }
+    .team{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .team .people{
+        width: 100%;
+        text-align: center;
+        padding: 20px;
+    }
+    .people img{
+        width: 200px;
+        height: 200px;
+    }
+    .call{
+        flex-direction: column;
+        text-align: center;
+    }
+    .call-img,.call-form{
+        width: 100%;
+    }
+    .call-heading{
+        padding-top: 20px;
+        font-size: 2rem;
+    }
+    .socials a{
+        margin: 0 0.5rem;
+    }
+    .btn{
+       font-weight: lighter;
+       padding: 0.5rem 0.5rem;
+    }
+    .btn-img{
+        display: none;
+    }
+    .services-text-2 p{
+        padding-top: 1rem;
+    }
+
+}
